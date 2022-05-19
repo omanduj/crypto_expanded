@@ -1,0 +1,22 @@
+<div class="login">
+    <p-card class="login-component" header="Get Ready!" subheader="Create an Account or Sign In" [style]="{width: '360px'}">
+        <!-- <ng-template pTemplate="footer"> -->
+            <div *ngIf="flag == 0">
+                <label for="fname">Username</label>
+                <input type="text" placeholder="Username">
+                <label for="fname">Password</label>
+                <input type="text" placeholder="Password">
+            </div>
+            <div *ngIf="flag == 1">
+                <label for="fname">Email</label>
+                <input type="text" placeholder="Email">
+                <label for="fname">Username</label>
+                <input type="text" placeholder="Username">
+                <label for="fname">Password</label>
+                <input type="text" placeholder="Password">
+            </div>
+            <p-button type="Submit" class="sign-in-button" label="Sign In" (click)="signIn()"></p-button>
+            <p-button type="Submit" class="sign-up-button" label="Sign Up" (click)="signUp()"></p-button>
+        <!-- </ng-template> -->
+    </p-card>
+</div>
